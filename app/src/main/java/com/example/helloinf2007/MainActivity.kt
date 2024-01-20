@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         val currentDateTime = LocalDateTime.now()
         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
         val formattedDateTime = currentDateTime.format(formatter)
-        Log.d("MainActivity", "onCreate function is initiated at " + formattedDateTime)
+        Log.d("MainActivity", "onCreate function is initiated at $formattedDateTime")
 
         setContent {
             HelloINF2007Theme {
